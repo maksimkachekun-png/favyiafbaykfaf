@@ -3,11 +3,11 @@ from datetime import datetime, timedelta
 import telebot
 from telebot import types
 
-token = ""
-channel_id = 
-channel_link = ""
-admin = 
-payment = 4.0
+token = "8607761376:AAFr9IlisoL-86JmPstajwHvc0-tx87WKgg"
+channel_id = -1003575639896
+channel_link = "https://t.me/rentmaxwork"
+admin = 8074992245
+payment = 6.0
 hold = 5 * 60
 timeout_phone = 60
 timeout_kod = 3 * 60
@@ -15,12 +15,12 @@ timeout_pwd = 3 * 60
 queue_timeout = 10 * 60
 activity_timeout = 3 * 60
 activity_confirm = 2 * 60
-min_withdraw = 30.0
+min_withdraw = 1.0
 
-group = []
-vyvod_channel = ""
-vyvod_channel_id = 
-support = ""
+group = [-1003839166129]
+vyvod_channel = "https://t.me/opoveshvivd"
+vyvod_channel_id = -1003954047383
+support = "@rentmaxhelp"
 
 local = threading.local()
 
