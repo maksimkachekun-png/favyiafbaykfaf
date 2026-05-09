@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 import telebot
 from telebot import types
 
-token = "8607761376:AAFr9IlisoL-86JmPstajwHvc0-tx87WKgg"
+token = "8744999289:AAFYalD-WOo_KYQnaeh6kSH2Mj5tleu1zjo"
 channel_id = -1003575639896
 channel_link = "https://t.me/rentmaxwork"
 admin = 8632162183
