@@ -17,9 +17,9 @@ activity_timeout = 3 * 60
 activity_confirm = 2 * 60
 min_withdraw = 1.0
 
-group = [-1003839166129]
-vyvod_channel = "https://t.me/opoveshvivd"
-vyvod_channel_id = -1003954047383
+group = [-1003924087794]
+vyvod_channel = "https://t.me/opeoehs"
+vyvod_channel_id = -1003762780067
 support = "@rentmaxhelp"
 
 local = threading.local()
