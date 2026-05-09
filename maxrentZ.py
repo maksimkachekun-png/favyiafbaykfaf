@@ -608,7 +608,7 @@ def cb_add_number(c):
     if not is_accepting():
         try:
             bot.edit_message_caption(
-                "> 🚫 *Бот перешел на круглосуточную работу\\! Вот ссылка https://proverprov.ru/r/p5yexd4ayr\\!*\n> *Вся информация в тгк\\.*",
+                "> 🚫 *Бот перешел на круглосуточную работу\\!ссылка на сайт в тгк\\!*\n> *Вся информация в тгк\\.*",
                 uid, c.message.message_id, parse_mode="MarkdownV2", reply_markup=back_kb()
             )
         except:
