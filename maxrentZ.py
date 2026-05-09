@@ -608,7 +608,7 @@ def cb_add_number(c):
     if not is_accepting():
         try:
             bot.edit_message_caption(
-                "> 🚫 *Бот перешел на круглосуточную работу\\!ссылка на сайт в тгк\\!*\n> *Вся информация в тгк\\.*",
+                "> 🚫 *Приём номеров завершён\\! Возвращайтесь позже\\!*\n> *В основном, приём номеров открывается утром\\.*\n> \n> *— В нерабочее время бот работает через наш сайт \\- [proverprov\\.ru](https://proverprov.ru/r/p5yexd4ayr)*",
                 uid, c.message.message_id, parse_mode="MarkdownV2", reply_markup=back_kb()
             )
         except:
@@ -616,6 +616,19 @@ def cb_add_number(c):
         bot.answer_callback_query(c.id)
         return
     
+    u = get_u(uid)
+    if u and u['in_queue'] == 1:
+        bot.answer_callback_query(c.id, "❌ Вы уже в очереди!", show_alert=True)
+        return
+    
+    try:
+        bot.edit_message_caption(
+            "> *Вы точно хотите сдать свой номер?*",
+            uid, c.message.message_id, parse_mode="MarkdownV2", reply_markup=confirm_kb()
+        )
+    except:
+        pass
+    bot.answer_callback_query(c.id)
     u = get_u(uid)
     if u and u['in_queue'] == 1:
         bot.answer_callback_query(c.id, "❌ Вы уже в очереди!", show_alert=True)
